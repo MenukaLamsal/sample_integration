@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style type="text/css">
+        h1{
+           font-family:  monospace;
+           text-align: center;
+         }
+         #log{
+            border-radius: 6px;
+            padding: 7px;
+            width: 200px;
+         }
+
+         #login{
+            background-color:whitesmoke;
+            border-style:hidden;
+            border-radius: 15px;
+            width: 440px;
+            margin:auto;
+            box-shadow: 0 10px 20px rgba(0, 0.15, 0.5, 0.35);
+         }
+        .submit{
+            background-color: dodgerblue;
+            padding:11px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            width:320px;
+        }
+        .submit:hover{
+            background: none;
+            color: black;
+            border-style: solid;
+        }
+        #text{
+            font-size:18px;
+            
+        }
+        .Y{
+           text-align: right;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="login">
+    <table cellspacing="18px">
+           <h1>Login</h1>
+            <form action="http://localhost:3000/login" method="POST">
+               
+            <tr>
+            
+                <td><p id="text">Email</p></td>
+                <td><input type="email" id="log" placeholder="enter email" name="Email"  required></td>
+
+            </tr>
+           
+                <td><p id="text">Password</p></td>
+                <td><input type="password" id="log" placeholder="enter password" name="Password" required></td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"><button type="submit" class="submit">Login</button></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"><a href="http://localhost:3000/register"><p class="Y">Create new account</p></a></td>
+                <td></td>
+            </tr>
+            </form>
+    </table>
+</div>
+</body>
+</html>
